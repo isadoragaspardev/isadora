@@ -3,14 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini App</title>
+    <title>Meu Mini App</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        body {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        video {
+            width: 100%;
+            max-width: 600px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Bem-vindo ao Mini App!</h1>
-    <script>
-        let tg = window.Telegram.WebApp;
-        tg.expand(); // Expande para tela cheia
-    </script>
+    <h1>🎬 Bem-vindo ao Player</h1>
+    <video controls>
+        <source src="https://vimeo.com/1056410800?share=copy" type="video/mp4">
+        Seu navegador não suporta vídeos HTML5.
+    </video>
 </body>
 </html>
